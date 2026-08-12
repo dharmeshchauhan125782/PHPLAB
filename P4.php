@@ -1,57 +1,36 @@
 <?php
-$month = date("m");
+$month = date("F");
 
-echo "<h3>Using If...Else</h3>";
+echo "Current Month: " . $month . "<br><br>";
 
-if ($month == 1) {
-    echo "January";
-} elseif ($month == 2) {
-    echo "February";
-} elseif ($month == 3) {
-    echo "March";
-} else {
-    echo "Other Month";
+// If Else
+if ($month == "January")
+{
+    echo "Using If Else : January";
+}
+else
+{
+    echo "Using If Else : " . $month;
 }
 
 echo "<br><br>";
-echo "<h3>Using Switch Case</h3>";
 
-switch ($month) {
-    case 1:
-        echo "January";
+// Switch Case
+switch($month)
+{
+    case "January":
+        echo "Using Switch : January";
         break;
-    case 2:
-        echo "February";
+
+    case "February":
+        echo "Using Switch : February";
         break;
-    case 3:
-        echo "March";
+
+    case "March":
+        echo "Using Switch : March";
         break;
-    case 4:
-        echo "April";
-        break;
-    case 5:
-        echo "May";
-        break;
-    case 6:
-        echo "June";
-        break;
-    case 7:
-        echo "July";
-        break;
-    case 8:
-        echo "August";
-        break;
-    case 9:
-        echo "September";
-        break;
-    case 10:
-        echo "October";
-        break;
-    case 11:
-        echo "November";
-        break;
-    case 12:
-        echo "December";
-        break;
+
+    default:
+        echo "Using Switch : " . $month;
 }
 ?>
