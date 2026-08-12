@@ -1,12 +1,17 @@
 <?php
-define("COLLEGE_NAME", "PrimeTech College");
-$studentName = "Vaibhav";
-$semester = "Semester 5";
-$percentage = 78.50;
+// Constant
+define("COLLEGE", "ABC College");
 
-echo "Previous Semester Result<br>  ";
-echo "College Name: " . COLLEGE_NAME . "<br>";
-echo "Student Name: " . $studentName . "<br>";
+// Variables
+$name = "Vaibhav";
+$semester = "Semester 2";
+$percentage = 78.50;
+$result = "PASS";
+
+echo "<h2>Previous Semester Result</h2>";
+echo "College Name: " . COLLEGE . "<br>";
+echo "Student Name: " . $name . "<br>";
 echo "Semester: " . $semester . "<br>";
-echo "Percentage: " . $percentage . "%";
+echo "Percentage: " . $percentage . "%<br>";
+echo "Result: " . $result;
 ?>
