@@ -1,11 +1,15 @@
 <?php
-$num1 = 25;
-$num2 = 45;
-$num3 = 15;
-$max = max($num1, $num2, $num3);
-$min = min($num1, $num2, $num3);
+$a = 20;
+$b = 45;
 
-echo "Numbers: $num1, $num2, $num3 <br>";
-echo "Maximum Number = " . $max . "<br>";
-echo "Minimum Number = " . $min;
+if ($a > $b)
+{
+    echo "Maximum Number = " . $a . "<br>";
+    echo "Minimum Number = " . $b;
+}
+else
+{
+    echo "Maximum Number = " . $b . "<br>";
+    echo "Minimum Number = " . $a;
+}
 ?>
